@@ -12,13 +12,14 @@
 
     <a-marker type="pattern" url="qrcode.patt">>
         
-        <a-image 
-          src="#linkedin-logo"
-          rotation="-90 0 0"
-          animation="property: scale; to: 1 1 1; from: 0.1 0.1 0.1; dur: 500; easing: easeInOutQuad; startEvents: markerFound">
-        </a-image>
-
-      </a-marker>
+       <a-image 
+  src="#linkedin-logo"
+  position="1.2 0 0"
+  rotation="-90 0 0"
+  material="transparent: true"
+  animation="property: scale; to: 1 1 1; from: 0.1 0.1 0.1; dur: 500; easing: easeInOutQuad; startEvents: markerFound"
+  animation__fade="property: material.opacity; to: 1; from: 0; dur: 500; easing: easeInOutQuad; startEvents: markerFound">
+</a-image>
 
       <a-entity camera></a-entity>
     </a-scene>
